@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+@import url('https://fonts.cdnfonts.com/css/miama?styles=170364');
 
 body{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight:48px;
   font-style: normal;
   color: white;
   background-color: black;
@@ -62,6 +62,13 @@ h2{
   font-size: 36px;
   color: rgb(230, 83, 60);
 }
+.bar-icon{
+  color: white;
+  display: none;
+}
+#cricle i{
+  display: none;
+}
 /* style-banner-section */
 .banner-section{
   display: flex;
@@ -73,6 +80,14 @@ h2{
 }
 .banner-container h2{
   font-size: 64px;
+  line-height: 90px;
+}
+.miama{
+  font-family: "Miama", sans-serif;
+  font-weight: none;
+}
+.banner-container p{
+  width: 60%;
 }
 .btn-primary{
   background-color: rgb(230, 83, 60);
@@ -86,8 +101,8 @@ h2{
   border: none;
 }
  #download{
-  background-color: black;
-  border: 2px solid rgb(255, 255, 255, 0.2) ;
+  background-color: rgb(255, 255, 255, 0.01) ;
+  border: 2px solid rgb(255, 255, 255, 0.3) ;
   margin-left: 20px;
  }
  .banner-image{
@@ -96,50 +111,43 @@ h2{
   background-position: center;
   width: 50%;
  }
- 
- #card-videos{
-  background-color: rgba(255, 255, 255, 0.1);
-  height: 20%;
-  max-width: 30%;
-  padding: 10px 30px;
+ .card-videos{
+  background-color: rgba(255, 255, 255, 0.1) ;
+  width: 25%;
+  padding: 5px 20px;
   border-radius: 12px;
-  backdrop-filter: blur(20px);
-  margin-top: 100px;
-  margin-left: 450px;
-  text-align: left;
-  color: white;
-  border: none;
- }
- #card-videos h2{
-  font-size: 40px;
-  margin: 0 auto;
-  height: 40px;
- }
- 
- #card-videos2{
-  background-color: rgba(255, 255, 255, 0.1);
-  text-align: left;
-  line-height: 100%;
-  width: 30%;
-  color: white;
-  border: none;
-  padding: 10px 30px;
-  border-radius: 12px;
+  margin-top: 70px;
+  margin-left: 380px;
   backdrop-filter: blur(10px);
+ }
+ .card-videos h3{
+  font-size: 40px;
+  margin: 15px auto;
+  height: 40px;
+  
+ }
+ .card-videos2{
+  background-color: rgba(255, 255, 255, 0.1) ;
+  width: 30%;
+  padding: 5px 20px;
+  border-radius: 12px;
+  margin-top: 210px;
+  margin-left: 50px;
   display: flex;
   gap: 20px;
   align-items: center;
-  margin-top: 180px;
-  margin-left: 100px;
-}
-#card-videos2 h2{
-  height: 10px;
-  font-size: 28px;
-}
-#card-videos2 h1{
+  backdrop-filter: blur(10px);
+ }
+ .card-videos2 h3{
+  font-size: 40px;
+  margin: 10px auto;
+  height: 40px;
+ }
+ 
+.card-videos2 h1{
   
-  width: 20%;
-  height:35px;
+  width: 22%;
+  height:40px;
   border-radius:50%;
   background-color:rgb(230, 83, 60);
 }
@@ -378,6 +386,7 @@ th{
 /* responsive-media */
 
 @media screen and (max-width:576px) {
+  .banner-section,
   .habits-image,
   .run-easily-section,
   .calculater-info,
@@ -397,20 +406,87 @@ th{
     "select2 select2"
     ;
   }
+  
   .run-easily-container p, 
   .calculate-bmi p,
   .our-team-container p,
   .logo-content p{
     width: 300px;
   }
+  .banner-container h2,
   .run-easily-container h2,
   .calculater-container h2,
   .our-team-container h2{
     font-size: 36px;
   }
   .habis-container h2{
-    font-size:32px;
-    weight: 300px;
+    font-size:28px;
+  }
+  .container{
+    width: 90%;
+  
+  }
+  /* responsive-banner-section */
+  .nav-ber-content{
+    display: none;
+    
+  }
+  .bar-icon{
+    display: block;
+    font-size: 24px;
+  }
+  .logo{
+    margin-left: -20px;
+
+  }
+  .banner-container{
+    margin-top: -50px;
+  }
+  .banner-container h2{
+    line-height: 50px;
+  }
+  .banner-container p{
+    width: 270px;
+  }
+  .banner-container button{
+    width:46%;
+  }
+  #club{
+  display: none;
+  }
+  .banner-image{
+    width: 100%;
+    height: 600px;
+  }
+  .card-videos{
+    width: 40%;
+    margin: 20px 170px;
+  
+  }
+  .card-videos h3, .card-videos2 h3{
+    font-size: 30px;
+    height: 30px;
+  }
+  .card-videos p, .card-videos2 p{
+    font-size: 12px;
+  }
+  .card-videos2 p{
+    font-size: 14px;
+  }
+  .card-videos2{
+    width: 50% ;
+    margin: 0 ;
+    margin-top: 120px;
+    margin-left: -20px;
+  }
+  .card-videos2 h1{
+    width: 40px;
+    height: 40px;
+  }
+  #cricle i{
+    display: block;
+    font-size:18px;
+    margin: 12px 14px;
   }
   /* responsive-run-easily-section */
   .run-easily-container{
@@ -418,10 +494,10 @@ th{
   }
   .run-easily-container button{
     width: 300px;
+  
   }
-  .run-easily-section{
+  .run-easily-section {
     width: 80%;
-
   }
   .run-easily-image img{
   height: 200px;
@@ -430,6 +506,13 @@ th{
   /* responsive-calculate-section */
   .bmi-chart h2{
     font-size: 24px;
+  }
+  .table, th, td{
+    width: 100%;
+    font-size: 14px;
+  }
+  .calculater-info{
+    margin: 20px;
   }
   .calculate-bmi h2{
    font-size: 24px;
@@ -442,10 +525,6 @@ th{
     width: 110%;
   }
   /* responsive-our-team-section */
-  .container{
-    width: 90%;
-  
-  }
   .our-team-container{
     margin-right: 190px;
   }
