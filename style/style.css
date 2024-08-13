@@ -96,7 +96,7 @@ h2{
   color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: 400px;
-  width: 35%;
+  width: 40%;
   line-height: 40px;
   margin-top: 18px;
   border: none;
@@ -110,50 +110,40 @@ h2{
   background-image: url(../images/Images\ 2.png);
   background-repeat: no-repeat;
   background-position: center;
-  width: 50%;
+  width: 100%;
  }
  .card-videos{
   background-color: rgba(255, 255, 255, 0.1) ;
-  width: 30%;
+  width: 25%;
   padding: 5px 20px;
   border-radius: 12px;
   margin-top: 130px;
-  margin-left: 250px;
+  margin-left: 320px;
   backdrop-filter: blur(10px);
  }
- .card-videos h2{
+ .card-videos h2, .card-videos2 h2{
   font-size: 24px;
   font-weight: 900px;
   margin: 10px auto;
   height: 20px;
  }
- .card-videos p{
+ .card-videos p, .card-videos2 p{
   font-size: 10px;
  }
  .card-videos2{
   background-color: rgba(255, 255, 255, 0.1) ;
-  width: 30%;
+  max-width: 25%;
   padding: 0px 20px;
   border-radius: 12px;
   margin-top: 200px;
-  margin-left: -40px;
   display: flex;
   gap: 10px;
   align-items: center;
   backdrop-filter: blur(10px);
  }
- .card-videos2 h2{
-  font-size: 24px;
-  font-weight: 900px;
-  margin: 10px auto;
-  height: 20px;
- }
- .card-videos2 p{
-  font-size: 10px;
- }
  .card-videos2 h1{
   width: 30%;
-  height:28px;
+  height:34px;
   border-radius:50%;
   background-color:rgb(230, 83, 60);
 }
@@ -287,7 +277,7 @@ th{
 }
 .calculate-form input{
   font-size: 18px;
-  width: 90%;
+  max-width: 100%;
   padding: 15px;
   border-radius: 12px;
   border: none;
@@ -295,7 +285,7 @@ th{
 }
 .calculate-form select{
   font-size: 18px;
-  width: 100%;
+  max-width: 100%;
   color: rgba(255, 255, 255, 0.3);
   padding: 15px;
   border-radius: 12px;
@@ -368,7 +358,7 @@ th{
 /* our-class-section */
 .our-class-container{
   text-align: center;
-  width: 40%;
+  width: 50%;
   margin: 100px auto;
 }
 .our-class-container h2{
@@ -386,20 +376,24 @@ th{
 }
 .our-class-card img{
   width: 100%;
-  height: 50%;
+  height: 40%;
   border-radius: 12px;
 }
 .our-class-card h2{
-  font-size: 32px;
-  height: 30px;
+  font-size: 28px;
+  height: 20px;
 }
 .our-class-card p{
-  height: 40px;
+  line-height: 18px;
+  height: 60px;
+}
+.our-class-card button{
+  width: 60%;
 }
 .class-icon{
-  font-size: 50px;
-  margin-top: 30px;
-  height: 50px;
+  font-size: 40px;
+  margin-top: 20px;
+  height: 40px;
 }
 /* style-footer-section */
 .footer-section{
@@ -414,7 +408,7 @@ th{
   margin: 0 auto;
 }
 .logo-content{
-  width: 30%;
+  width:36%;
 }
 .logo-content h2{
   font-size: 74px;
@@ -467,6 +461,8 @@ th{
     "select2 select2"
     ;
   }
+  .banner-container p,
+  .habis-container p,
   .run-easily-container p, 
   .calculate-bmi p,
   .our-class-container p,
@@ -482,13 +478,15 @@ th{
     font-size: 36px;
   }
   .habis-container h2,
-  .our-class-card h2{
+  .our-class-card h2,
+  .bmi-chart h2, 
+  .calculate-bmi h2{
     font-size:24px;
   }
   .container{
     width: 90%;
   }
- /* responsive-banner-section */
+/* responsive-nav-section */
   .nav-ber-content{
     display: none;
   }
@@ -499,15 +497,13 @@ th{
   .logo{
     margin-left: -20px;
   }
+ /* responsive-banner-section */
   .banner-container{
     margin-top: -50px;
   }
   .banner-container h2{
     line-height: 50px;
     height: 150px;
-  }
-  .banner-container p{
-    width: 230px;
   }
   .banner-container button{
     width:46%;
@@ -518,26 +514,29 @@ th{
   .banner-image{
     width: 100%;
     height: 600px;
+    margin-top: -50px;
   }
   .card-videos{
-    width: 40%;
-    margin: 20px 170px;
+    width: 30% ;
+    margin: 50px 180px;
   }
-  .card-videos h3, .card-videos2 h3{
-    font-size: 30px;
-    height: 30px;
+  .card-videos h2{
+    font-size: 24px;
+    height: 15px;
+  }
+  .card-videos2 h2{
+    font-size: 18px;
+    height: 15px;
   }
   .card-videos p, .card-videos2 p{
-    font-size: 12px;
-  }
-  .card-videos2 p{
-    font-size: 14px;
+    font-size: 10px;
+    width: 130px;
   }
   .card-videos2{
-    width: 50% ;
+     max-width: 40% ;
     margin: 0 ;
-    margin-top: 120px;
-    margin-left: -20px;
+    margin-top: 100px;
+    margin-left: -10px;
   }
   .card-videos2 h1{
     width: 40px;
@@ -564,8 +563,8 @@ th{
   object-fit: cover;
   }
   /* responsive-calculate-section */
-  .bmi-chart h2{
-    font-size: 24px;
+  .calculater-content{
+    margin: 0px;
   }
   .table, th, td{
     font-size: 14px;
@@ -574,11 +573,10 @@ th{
     margin: 20px;
   }
   .calculate-bmi h2{
-   font-size: 24px;
    width: 250px;
   }
   .calculate-form input{
-    width: 120px;
+    max-width: 130px;
   }
   .calculate-form button{
     width: 110%;
@@ -586,6 +584,9 @@ th{
   /* resposive-our-class-section */
   .our-class-container{
     width: 90%;
+  }
+  .our-class-container p{
+    width: 100%;
   }
   .our-class-content{
      width: 80%;
@@ -595,21 +596,21 @@ th{
     margin-top: 60px;
   }
   /* responsive-our-team-section */
-  .our-team-container{
-    margin-right: 190px;
+  .our-team-container, .our-team-container h2, .our-team-container p{
+    width: 100%;
   }
-  .our-team-container h2{
-    width: 300px;
+  .our-team-images{
+    width: 90%;
   }
   .team-image div{
-    height: 300px;
+    height: 250px;
   }
   .team-image h2{
     font-size: 18px;
     font-weight: 400px;
     height: 0px;
   }
-  .team-image p{
-    font-size: 14px;
+  .logo-content h2{
+  margin-left: 0px;
   }
 }
