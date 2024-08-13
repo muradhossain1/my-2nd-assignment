@@ -193,11 +193,12 @@ h2{
   margin: 20px 0px;
 }
 .run-easily-container p{
-  width: 70%;
+  width: 60%;
   
 }
 .run-easily-container button{
   width: 30%;
+  
 }
 .run-easily-image img{
   width: 100%;
@@ -553,6 +554,7 @@ th{
   }
   .run-easily-container button{
     width: 300px;
+    height: 60px;
   }
   .run-easily-section {
     width: 80%;
