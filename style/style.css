@@ -476,7 +476,6 @@ th{
   .banner-container p,
   .habis-container p,
   .run-easily-container p, 
-  .calculate-bmi p,
   .our-class-container p,
   .our-team-container p{
     width: 100%;
@@ -495,7 +494,7 @@ th{
     font-size:24px;
   }
   .container{
-    width: 90%;
+    width:90%;
   }
 /* responsive-nav-section */
   .nav-ber-content{
@@ -518,6 +517,7 @@ th{
   }
   .banner-container button{
     width:46%;
+    font-size: 16px;
   }
   #club{
   display: none;
@@ -528,8 +528,10 @@ th{
     margin-top: -50px;
   }
   .card-videos{
-    width: 30% ;
+    width: 40% ;
+    padding: 0px 10px;
     margin: 50px 180px;
+    border: 1px solid rgba(255, 255, 255, 0.01);
   }
   .card-videos h2{
     font-size: 24px;
@@ -541,7 +543,7 @@ th{
   }
   .card-videos p, .card-videos2 p{
     font-size: 10px;
-    width: 130px;
+    width: 100px;
   }
   .card-videos2{
      max-width: 40% ;
@@ -587,16 +589,13 @@ th{
     font-size: 14px;
   }
   .calculater-info{
-    margin: 20px;
+    margin: 0 auto;
   }
-  .calculate-bmi h2{
-   width: 250px;
+  .calculate-bmi{
+    width: 100%;
   }
-  .calculate-bmi p{
-    width: 150%;
-  }
-  .calculate-form input{
-    max-width: 130px;
+  .calculate-bmi input{
+    width: 80%;
   }
   .calculate-form button{
     width: 110%;
@@ -613,7 +612,7 @@ th{
   }
   .our-class-card button{
     width: 100%;
-    margin-top: 60px;
+    margin-top: 20px;
   }
   /* responsive-our-team-section */
   .our-team-container, .our-team-container h2, .our-team-container p{
@@ -630,6 +629,7 @@ th{
     font-weight: 400px;
     height: 0px;
   }
+  
   /* resposive-footer-section */
   .logo-content{
     width: 100%;
