@@ -28,7 +28,6 @@ h2{
 /* style-navber */
 .nav-container{
   background-image: linear-gradient(to bottom, #1d1c1c, #201e1f, #222121, #252324, #272627, #252425, #232323, #212121, #1b1b1b, #141414, #0c0c0c, #000000);
-
   height: 70%;
 }
 .nav-ber{
@@ -48,11 +47,14 @@ h2{
 }
 .btn-home{
   background-color: rgb(230, 83, 60);
-  width: 145px;
+  width: 146px;
+  height: 48px;
+  margin: 2px 2px;
   border-radius: 42px ;
   font-size: 18px;
   font-weight: 600;
   color: white;
+  border:none;
 }
 .nav-ber-content p{
   margin-right: 40px;
@@ -121,14 +123,20 @@ h2{
   margin-left: 320px;
   backdrop-filter: blur(10px);
  }
- .card-videos h2, .card-videos2 h2{
+ .card-videos h2{
   font-size: 24px;
   font-weight: 900px;
   margin: 10px auto;
   height: 20px;
  }
+ .card-videos2 h2{
+  font-size: 18px;
+  font-weight: 900px;
+  margin: 10px auto;
+  height: 10px;
+ }
  .card-videos p, .card-videos2 p{
-  font-size: 10px;
+  font-size: 12px;
  }
  .card-videos2{
   background-color: rgba(255, 255, 255, 0.1) ;
@@ -142,8 +150,8 @@ h2{
   backdrop-filter: blur(10px);
  }
  .card-videos2 h1{
-  width: 30%;
-  height:34px;
+  width: 28%;
+  height:32px;
   border-radius:50%;
   background-color:rgb(230, 83, 60);
 }
@@ -307,7 +315,7 @@ th{
   height: 40px;
 }
 .our-team-images{
-  width: 100%;
+  width: 97%;
   padding: 20px ;
   border-radius:12px ; 
   gap: 20px;
