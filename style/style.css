@@ -114,44 +114,54 @@ h2{
   background-position: center;
   width: 100%;
  }
- .card-videos{
-  background-color: rgba(255, 255, 255, 0.1) ;
-  width: 25%;
-  padding: 5px 20px;
-  border-radius: 12px;
-  margin-top: 130px;
-  margin-left: 320px;
-  backdrop-filter: blur(10px);
+ .banner-card{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  margin-top: 120px;
+  margin-right: 90px;
  }
- .card-videos h2{
-  font-size: 24px;
-  font-weight: 900px;
-  margin: 10px auto;
-  height: 20px;
+ .banner-card2{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  margin-top: 200px ;
+  margin-left: 40px;
  }
- .card-videos2 h2{
-  font-size: 18px;
-  font-weight: 900px;
-  margin: 10px auto;
-  height: 10px;
- }
- .card-videos p, .card-videos2 p{
-  font-size: 12px;
- }
- .card-videos2{
+.card-videos{
   background-color: rgba(255, 255, 255, 0.1) ;
   max-width: 25%;
-  padding: 0px 20px;
+  padding: 20px;
   border-radius: 12px;
-  margin-top: 200px;
+  backdrop-filter: blur(10px);
+}
+.card-videos2{
+  background-color: rgba(255, 255, 255, 0.1) ;
+  width: 25%;
+  padding:5px 20px;
   display: flex;
+  border-radius: 12px;
   gap: 10px;
   align-items: center;
   backdrop-filter: blur(10px);
- }
- .card-videos2 h1{
-  width: 28%;
-  height:32px;
+}
+.card-videos h3{
+  font-size: 24px;
+  height: 30px;
+  margin: 0;
+}
+.card-videos2 h3{
+  font-size: 18px;
+  height: 20px;
+  margin: 0;
+}
+.card-videos p, .card-videos2 p{
+  font-size: 12px;
+  margin: 0;
+}
+.card-videos2 h1{
+  width: 25%;
+  height:34px;
   border-radius:50%;
   background-color:rgb(230, 83, 60);
 }
@@ -206,7 +216,6 @@ h2{
 }
 .run-easily-container button{
   width: 30%;
-  
 }
 .run-easily-image img{
   width: 100%;
@@ -441,8 +450,6 @@ th{
 .footer-end-section hr{
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-
-
 /* responsive-media */
 @media screen and (max-width:576px) {
   .banner-section,
@@ -519,29 +526,23 @@ th{
     height: 600px;
     margin-top: -50px;
   }
+  .banner-card{
+    margin: 0px;
+    margin-top: 40px;
+  }
+  .banner-card2{
+    margin: 100px 0;
+  }
   .card-videos{
-    width: 40% ;
-    padding: 0px 10px;
-    margin: 50px 170px;
-    border: 1px solid rgba(255, 255, 255, 0.01);
-  }
-  .card-videos h2{
-    font-size: 24px;
-    height: 15px;
-  }
-  .card-videos2 h2{
-    font-size: 18px;
-    height: 15px;
+    padding: 20px;
+    max-width: 100%;
   }
   .card-videos p, .card-videos2 p{
     font-size: 10px;
     width: 100px;
   }
   .card-videos2{
-     max-width: 40% ;
-    margin: 0 ;
-    margin-top: 120px;
-    margin-left: -10px;
+   width: 140px;
   }
   .card-videos2 h1{
     width: 40px;
